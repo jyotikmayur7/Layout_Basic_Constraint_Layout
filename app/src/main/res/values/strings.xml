@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ConstraintLayout</string>
+    <string name="scheduled">SCHEDULED</string>
+    <string name="flight_departing_in_5_days">FLIGHT DEPARTING IN 5 DAYS</string>
 </resources>
