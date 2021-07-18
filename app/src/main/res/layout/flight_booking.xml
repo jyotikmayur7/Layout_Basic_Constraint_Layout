@@ -87,13 +87,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.Barrier
-            android:id="@+id/barrier6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="end"
-            app:constraint_referenced_ids="first_name_full,first_name_label"
-            tools:layout_editor_absoluteX="16dp" />
+<!--        <androidx.constraintlayout.widget.Barrier-->
+<!--            android:id="@+id/barrier6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:barrierDirection="end"-->
+<!--            app:constraint_referenced_ids="first_name_full,first_name_label"-->
+<!--            tools:layout_editor_absoluteX="16dp" />-->
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_start"
