@@ -111,8 +111,6 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="16dp" />
 
-<!--        Git test-->
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
