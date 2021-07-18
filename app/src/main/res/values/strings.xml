@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ConstraintLayout</string>
+    <string name="scheduled">SCHEDULED</string>
+    <string name="flight_departing_in_5_days">FLIGHT DEPARTING IN 5 DAYS</string>
+    <string name="pnr_ky9_432776">PNR: KY9/432776</string>
+    <string name="first_name">FIRST NAME</string>
 </resources>
