@@ -102,8 +102,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Doe"
             android:textStyle="bold"
+            android:text="Doe"
             app:layout_constraintStart_toEndOf="@+id/barrier6"
             app:layout_constraintTop_toBottomOf="@+id/last_name_label" />
 
@@ -248,6 +248,15 @@
             app:layout_constraintEnd_toEndOf="@+id/duration_separator"
             app:layout_constraintStart_toStartOf="@+id/duration_separator"
             app:layout_constraintTop_toBottomOf="@+id/flight_duration_label" />
+
+        <ImageView
+            android:id="@+id/flight_takeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_airport_full"
+            app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
