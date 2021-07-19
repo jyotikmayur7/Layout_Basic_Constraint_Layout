@@ -179,12 +179,22 @@
             android:id="@+id/departure_airport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DEL"
-            android:layout_marginTop="24dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:text="DEL"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
             app:layout_constraintTop_toBottomOf="@+id/first_name_full" />
+
+        <TextView
+            android:id="@+id/departure_airport_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="(DELHI)"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_airport" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
