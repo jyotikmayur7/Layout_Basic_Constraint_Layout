@@ -32,7 +32,6 @@
             app:layout_constraintTop_toBottomOf="@+id/scheduled_label"
             app:srcCompat="@drawable/watch" />
 
-
         <TextView
             android:id="@+id/scheduled_label"
             android:layout_width="0dp"
@@ -45,6 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/flight_departing_label"
@@ -97,7 +97,6 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/first_name_label"
             app:layout_constraintStart_toEndOf="@+id/barrier6" />
 
-
         <TextView
             android:id="@+id/last_name_full"
             android:layout_width="wrap_content"
@@ -108,6 +107,7 @@
             app:layout_constraintStart_toEndOf="@+id/barrier6"
             app:layout_constraintTop_toBottomOf="@+id/last_name_label" />
 
+
         <TextView
             android:id="@+id/age_label"
             android:layout_width="wrap_content"
@@ -116,6 +116,16 @@
             android:text="Age"
             app:layout_constraintStart_toEndOf="@+id/barrier3"
             app:layout_constraintTop_toTopOf="@+id/last_name_label" />
+
+        <TextView
+            android:id="@+id/age_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="35"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/age_label" />
 
         <androidx.constraintlayout.widget.Barrier
             android:id="@+id/barrier6"
