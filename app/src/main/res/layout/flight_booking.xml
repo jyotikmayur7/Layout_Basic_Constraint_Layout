@@ -196,6 +196,15 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
             app:layout_constraintTop_toBottomOf="@+id/departure_airport" />
 
+        <TextView
+            android:id="@+id/arrival_airport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAG"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toTopOf="@+id/departure_airport" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
