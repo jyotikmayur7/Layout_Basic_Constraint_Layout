@@ -32,6 +32,7 @@
             app:layout_constraintTop_toBottomOf="@+id/scheduled_label"
             app:srcCompat="@drawable/watch" />
 
+
         <TextView
             android:id="@+id/scheduled_label"
             android:layout_width="0dp"
@@ -87,7 +88,34 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
             app:layout_constraintTop_toBottomOf="@+id/first_name_label" />
 
+        <TextView
+            android:id="@+id/last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="LAST NAME"
+            app:layout_constraintBaseline_toBaselineOf="@+id/first_name_label"
+            app:layout_constraintStart_toEndOf="@+id/barrier6" />
 
+
+        <TextView
+            android:id="@+id/last_name_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Doe"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/barrier6"
+            app:layout_constraintTop_toBottomOf="@+id/last_name_label" />
+
+        <TextView
+            android:id="@+id/age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Age"
+            app:layout_constraintStart_toEndOf="@+id/barrier3"
+            app:layout_constraintTop_toTopOf="@+id/last_name_label" />
 
         <androidx.constraintlayout.widget.Barrier
             android:id="@+id/barrier6"
@@ -96,6 +124,14 @@
             app:barrierDirection="end"
             app:constraint_referenced_ids="first_name_full,first_name_label"
             tools:layout_editor_absoluteX="16dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="last_name_full,last_name_label"
+            tools:layout_editor_absoluteX="112dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_start"
