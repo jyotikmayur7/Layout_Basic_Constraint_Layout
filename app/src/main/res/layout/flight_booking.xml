@@ -214,6 +214,17 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/arrival_airport" />
 
+        <TextView
+            android:id="@+id/flight_duration_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FLIGHT DURATION"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/arrival_airport"
+            app:layout_constraintStart_toEndOf="@+id/departure_airport"
+            app:layout_constraintTop_toTopOf="@+id/departure_airport" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
