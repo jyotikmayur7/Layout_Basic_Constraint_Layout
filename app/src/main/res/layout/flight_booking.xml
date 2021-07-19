@@ -20,6 +20,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageButton
+            android:id="@+id/airport_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toEndOf="@+id/departure_airport_name"
+            app:layout_constraintTop_toTopOf="@+id/departure_airport_name"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
         <ImageView
             android:id="@+id/watch"
             android:layout_width="wrap_content"
@@ -31,6 +42,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scheduled_label"
             app:srcCompat="@drawable/watch" />
+
+        <ImageView
+            android:id="@+id/flight_takeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_airport_full"
+            app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
 
         <TextView
             android:id="@+id/scheduled_label"
@@ -45,6 +65,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/flight_departing_label"
             android:layout_width="wrap_content"
@@ -56,7 +77,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/watch"
             app:layout_constraintTop_toTopOf="@+id/watch" />
-
 
         <TextView
             android:id="@+id/pnr_label"
@@ -102,10 +122,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textStyle="bold"
             android:text="Doe"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/barrier6"
             app:layout_constraintTop_toBottomOf="@+id/last_name_label" />
+
 
         <TextView
             android:id="@+id/age_label"
@@ -115,7 +136,6 @@
             android:text="Age"
             app:layout_constraintStart_toEndOf="@+id/barrier3"
             app:layout_constraintTop_toTopOf="@+id/last_name_label" />
-
 
         <TextView
             android:id="@+id/age_full"
@@ -184,6 +204,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/arrival_airport" />
 
+
         <TextView
             android:id="@+id/flight_duration_label"
             android:layout_width="0dp"
@@ -193,6 +214,30 @@
             app:layout_constraintEnd_toStartOf="@+id/arrival_airport"
             app:layout_constraintStart_toEndOf="@+id/departure_airport"
             app:layout_constraintTop_toTopOf="@+id/departure_airport" />
+
+
+        <TextView
+            android:id="@+id/flight_duration_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7h 45m (0 stopover)"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/duration_separator"
+            app:layout_constraintStart_toStartOf="@+id/duration_separator"
+            app:layout_constraintTop_toBottomOf="@+id/flight_duration_label" />
+
+        <TextView
+            android:id="@+id/departure_airport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Indra Gandhi International Airport, Delhi"
+            app:layout_constraintStart_toEndOf="@+id/flight_takeoff"
+            app:layout_constraintTop_toBottomOf="@+id/flight_duration_full" />
+
 
 
         <View
@@ -205,9 +250,6 @@
             app:layout_constraintEnd_toStartOf="@+id/arrival_airport_full"
             app:layout_constraintStart_toEndOf="@+id/departure_airport_full"
             app:layout_constraintTop_toBottomOf="@+id/flight_duration_label" />
-
-
-
 
         <androidx.constraintlayout.widget.Barrier
             android:id="@+id/barrier6"
@@ -240,23 +282,13 @@
             app:layout_constraintGuide_end="16dp" />
 
         <TextView
-            android:id="@+id/flight_duration_full"
+            android:id="@+id/departure_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7h 45m (0 stopover)"
+            android:text="Monday, 18th March"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/duration_separator"
-            app:layout_constraintStart_toStartOf="@+id/duration_separator"
-            app:layout_constraintTop_toBottomOf="@+id/flight_duration_label" />
-
-        <ImageView
-            android:id="@+id/flight_takeoff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@+id/departure_airport_full"
-            app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
+            app:layout_constraintStart_toStartOf="@+id/departure_airport_name"
+            app:layout_constraintTop_toBottomOf="@+id/departure_airport_name" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
