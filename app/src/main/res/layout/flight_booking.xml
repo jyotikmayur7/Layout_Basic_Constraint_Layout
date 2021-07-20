@@ -401,6 +401,39 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/airlines_label" />
 
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/seat_full"
+            app:srcCompat="@drawable/ic_baseline_wifi_24" />
+
+        <ImageView
+            android:id="@+id/cup"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toEndOf="@+id/wifi"
+            app:layout_constraintTop_toTopOf="@+id/wifi"
+            app:srcCompat="@drawable/ic_baseline_emoji_food_beverage_24" />
+
+        <ImageView
+            android:id="@+id/plug"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toEndOf="@+id/cup"
+            app:layout_constraintTop_toTopOf="@+id/cup"
+            app:srcCompat="@drawable/ic_baseline_power_24" />
+
+        <ImageView
+            android:id="@+id/bag"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toEndOf="@+id/plug"
+            app:layout_constraintTop_toTopOf="@+id/plug"
+            app:srcCompat="@drawable/ic_baseline_work_24" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
