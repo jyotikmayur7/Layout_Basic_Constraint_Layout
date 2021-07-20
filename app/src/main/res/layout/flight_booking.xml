@@ -456,6 +456,25 @@
             app:layout_constraintStart_toEndOf="@+id/bag_weight"
             app:layout_constraintTop_toBottomOf="@+id/flight_number_full" />
 
+        <TextView
+            android:id="@+id/total_fare_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TOTAL FARE:"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/total_fare_full"
+            app:layout_constraintTop_toBottomOf="@+id/more" />
+
+        <TextView
+            android:id="@+id/total_fare_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="INR 7811.00"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toTopOf="@+id/total_fare_label" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
