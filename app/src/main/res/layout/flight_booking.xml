@@ -384,6 +384,23 @@
             app:layout_constraintStart_toStartOf="@+id/flight_number_label"
             app:layout_constraintTop_toBottomOf="@+id/flight_number_label" />
 
+        <ImageView
+            android:id="@+id/airlines_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toTopOf="@+id/flight_number_label"
+            app:srcCompat="@drawable/ic_baseline_ac_unit_24" />
+
+        <TextView
+            android:id="@+id/airlines_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOYON"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@+id/airlines_label" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
