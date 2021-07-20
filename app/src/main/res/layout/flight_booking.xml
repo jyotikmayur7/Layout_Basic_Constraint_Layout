@@ -345,6 +345,24 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/gate_label" />
 
+        <TextView
+            android:id="@+id/seat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEAT"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_time_full" />
+
+        <TextView
+            android:id="@+id/seat_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11B"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/seat_label" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
