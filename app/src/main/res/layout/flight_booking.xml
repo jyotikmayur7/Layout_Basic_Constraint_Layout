@@ -308,6 +308,15 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
             app:layout_constraintTop_toBottomOf="@+id/departure_time_label" />
 
+        <TextView
+            android:id="@+id/terminal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TERMINAL"
+            android:layout_marginLeft="45dp"
+            app:layout_constraintStart_toEndOf="@+id/departure_time_label"
+            app:layout_constraintTop_toTopOf="@+id/departure_time_label" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
