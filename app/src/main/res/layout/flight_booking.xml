@@ -20,11 +20,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <ImageButton
             android:id="@+id/airport_map"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginLeft="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintStart_toEndOf="@+id/departure_airport_name"
@@ -65,7 +66,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <TextView
             android:id="@+id/flight_departing_label"
             android:layout_width="wrap_content"
@@ -77,6 +77,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/watch"
             app:layout_constraintTop_toTopOf="@+id/watch" />
+
 
         <TextView
             android:id="@+id/pnr_label"
@@ -127,7 +128,6 @@
             app:layout_constraintStart_toEndOf="@+id/barrier6"
             app:layout_constraintTop_toBottomOf="@+id/last_name_label" />
 
-
         <TextView
             android:id="@+id/age_label"
             android:layout_width="wrap_content"
@@ -136,6 +136,7 @@
             android:text="Age"
             app:layout_constraintStart_toEndOf="@+id/barrier3"
             app:layout_constraintTop_toTopOf="@+id/last_name_label" />
+
 
         <TextView
             android:id="@+id/age_full"
@@ -204,7 +205,6 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/arrival_airport" />
 
-
         <TextView
             android:id="@+id/flight_duration_label"
             android:layout_width="0dp"
@@ -226,6 +226,7 @@
             app:layout_constraintStart_toStartOf="@+id/duration_separator"
             app:layout_constraintTop_toBottomOf="@+id/flight_duration_label" />
 
+
         <TextView
             android:id="@+id/departure_airport_name"
             android:layout_width="wrap_content"
@@ -238,6 +239,98 @@
             app:layout_constraintStart_toEndOf="@+id/flight_takeoff"
             app:layout_constraintTop_toBottomOf="@+id/flight_duration_full" />
 
+        <TextView
+            android:id="@+id/departure_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday, 18th March"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/departure_airport_name"
+            app:layout_constraintTop_toBottomOf="@+id/departure_airport_name" />
+
+
+        <TextView
+            android:id="@+id/departure_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="DEPARTURE TIME"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_date" />
+
+        <TextView
+            android:id="@+id/departure_time_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:35 AM"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_time_label" />
+
+        <TextView
+            android:id="@+id/terminal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="TERMINAL"
+            app:layout_constraintStart_toEndOf="@+id/departure_time_label"
+            app:layout_constraintTop_toTopOf="@+id/departure_time_label" />
+
+        <TextView
+            android:id="@+id/terminal_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T3"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/terminal_label"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="@+id/terminal_label"
+            app:layout_constraintTop_toBottomOf="@+id/terminal_label" />
+
+        <TextView
+            android:id="@+id/gate_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GATE"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toTopOf="@+id/terminal_label" />
+
+        <TextView
+            android:id="@+id/gate_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 A"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@+id/gate_label" />
+
+        <TextView
+            android:id="@+id/seat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SEAT"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/departure_time_full" />
+
+        <TextView
+            android:id="@+id/seat_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11B"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/seat_label" />
+
+        <TextView
+            android:id="@+id/flight_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="FLIGHT NO."
+            app:layout_constraintEnd_toEndOf="@+id/terminal_label"
+            app:layout_constraintStart_toStartOf="@+id/terminal_label"
+            app:layout_constraintTop_toBottomOf="@+id/terminal_full" />
 
 
         <View
@@ -282,86 +375,14 @@
             app:layout_constraintGuide_end="16dp" />
 
         <TextView
-            android:id="@+id/departure_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Monday, 18th March"
+            android:id="@+id/flight_number_full"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:text="KY 12"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/departure_airport_name"
-            app:layout_constraintTop_toBottomOf="@+id/departure_airport_name" />
-
-        <TextView
-            android:id="@+id/departure_time_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DEPARTURE TIME"
-            android:layout_marginTop="25dp"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@+id/departure_date" />
-
-        <TextView
-            android:id="@+id/departure_time_full"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="11:35 AM"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@+id/departure_time_label" />
-
-        <TextView
-            android:id="@+id/terminal_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TERMINAL"
-            android:layout_marginLeft="45dp"
-            app:layout_constraintStart_toEndOf="@+id/departure_time_label"
-            app:layout_constraintTop_toTopOf="@+id/departure_time_label" />
-
-        <TextView
-            android:id="@+id/terminal_full"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="T3"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/terminal_label"
-            app:layout_constraintHorizontal_bias="0.454"
-            app:layout_constraintStart_toStartOf="@+id/terminal_label"
-            app:layout_constraintTop_toBottomOf="@+id/terminal_label" />
-
-        <TextView
-            android:id="@+id/gate_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GATE"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-            app:layout_constraintTop_toTopOf="@+id/terminal_label" />
-
-        <TextView
-            android:id="@+id/gate_full"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="10 A"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-            app:layout_constraintTop_toBottomOf="@+id/gate_label" />
-
-        <TextView
-            android:id="@+id/seat_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SEAT"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@+id/departure_time_full" />
-
-        <TextView
-            android:id="@+id/seat_full"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="11B"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline_start"
-            app:layout_constraintTop_toBottomOf="@+id/seat_label" />
+            app:layout_constraintEnd_toEndOf="@+id/flight_number_label"
+            app:layout_constraintStart_toStartOf="@+id/flight_number_label"
+            app:layout_constraintTop_toBottomOf="@+id/flight_number_label" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
